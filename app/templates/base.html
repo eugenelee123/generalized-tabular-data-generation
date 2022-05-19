@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{% block title %}{% endblock %}</title>
+<!-- Bootstrap core CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<!-- Custom styles for this template -->
+<!-- Self made css-->
+<link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+<script src="https://use.fontawesome.com/dfc9b415d4.js"></script>
+</head>
+
+<style>
+    body, header{
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+</style>
+    
+
+<body>
+    
+    <header id="header">
+        <div class="inner">
+            <a href="/" class="logo" ><strong style="color:#6cc091;">Data Augmentation Helper</strong></a>
+            <!-- <nav id="nav">
+                <a href="/">Features</a>
+                <a href="#howto">How To</a>
+                <a href="#support">Support</a>
+            </nav> -->
+        </div>
+    </header>
+
+
+    <!-- Banner -->
+    <section id="banner">
+        <div class="inner">
+            {% block body %} {% endblock %}
+        </div>
+    </section>
+    </div>
+</body>
+
+<footer class="site-footer">
+    <div class="footer_container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <ul class="footer-links">
+                    <h6>Features</h6>
+                    <h6>How To </h6>
+                    <h6>Support</h6>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="footer_container">
+        <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

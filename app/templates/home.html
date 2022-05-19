@@ -1,0 +1,27 @@
+{%extends "base.html" %}
+{%block title%}Home{%endblock%}
+{%block body%}
+
+    <!-- <h1>Data Augmentation Helper</h1>
+    <h2><strong>Features</strong></h2>
+    <p>
+
+    </p>
+    <h2><strong>How To</strong></h2>
+    <p>
+
+    </p>
+    <h2><strong>Support</strong></h2>
+    <p>
+        Email me at eugeneghunlee@gmail.com
+    </p> -->
+    <form method = 'POST' enctype = 'multipart/form-data'>
+        <label for='discrete_columns'>Discrete Columns (Separated by commas):</label>
+        <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" name='discrete_columns'><br><br>
+        <label for='target_name'>Target Name:</label>
+        <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" name='target_name'><br><br>
+        <input type = file name  = file>
+        <input type = submit>
+    </form>
+        
+{%endblock%}
